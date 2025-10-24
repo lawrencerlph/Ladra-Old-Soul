@@ -1,0 +1,168 @@
+body{
+    background: url(motor1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper{
+    position: fixed;       
+    top: 10px;               
+    left: 50%;                 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px); 
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #c6b9ab;
+    box-shadow: 10px 10px 5px #24211f;
+    border: #c6b9ab;
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow: hidden;   
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navlink-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.navlink-wrapper a{
+    text-decoration: none;
+    color: #080700;
+    font-size: 20px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navlink.active {
+  background: #c6b9abe5;
+  color: #24211f;
+  font-weight: bold;
+  box-shadow: 4px 4px 8px #24211f22;
+}
+
+
+.navlink:hover{
+    text-decoration: underline;
+    background-color: #6b6662;
+}
+
+.hero-section{
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 1000px;
+}
+
+.hero-section h1{
+    font-size: 40px;
+    color: #080700;
+    margin-bottom: 20px;
+    
+}
+
+.hero-section p{
+    font-size: 15px;
+    color: #080700;
+    margin-bottom: 30px;
+    line-height: 1.5;
+
+}
+
+.owner-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 80px 45px 45px 45px;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 1000px;
+}
+
+.owner-section h2 {
+    font-size: 30px;
+    color: #080700;
+    margin-bottom: 25px;
+}
+
+.owner-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.owner-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 8px 8px 16px #24211f44;
+    margin-bottom: 18px;
+}
+
+.owner-details {
+    max-width: 400px;
+    text-align: left;
+}
+
+.owner-details h3 {
+    font-size: 20px;
+    color: #080700;
+    margin-bottom: 14px;
+}
+
+.owner-details p {
+    font-size: 15px;
+    color: #080700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.site-footer {
+    background-color: #e7e0d9cf;
+    color: #080700;
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1100px;
+}
+
+.site-footer p{
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+

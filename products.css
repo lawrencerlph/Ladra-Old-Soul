@@ -1,0 +1,226 @@
+body{
+    background: url(motor1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper{
+   position: fixed;       
+    top: 10px;               
+    left: 50%;                 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px); 
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #c6b9ab;
+    box-shadow: 10px 10px 5px #24211f;
+    border: #c6b9ab;
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow: hidden;   
+
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navlink-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.navlink-wrapper a{
+    text-decoration: none;
+    color: #080700;
+    font-size: 20px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navlink.active {
+  background: #c6b9abe5;
+  color: #24211f;
+  font-weight: bold;
+  box-shadow: 4px 4px 8px #24211f22;
+}
+
+.navlink:hover{
+    text-decoration: underline;
+    background-color: #6b6662;
+}
+
+.order-section {
+  text-align: center;
+  margin: 20px auto;
+  padding: 80px 45px 45px 45px;
+  background-color: #c6b9abe5;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #24211fef;
+  max-width: 1100px;
+}
+
+.order-section h2 {
+  font-size: 30px;
+  color: #080700;
+  margin: 20px;
+}
+
+.order-section p {
+  font-size: 15px;
+  color: #080700;
+  margin-bottom: 32px;
+}
+
+.order-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.order-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #24211fef;
+  padding: 20px 14px 14px 14px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+
+.order-item:hover {
+  transform: scale(1.05);
+}
+
+.order-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #24211fef;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-name {
+  font-size: 1rem;
+  color: #080700;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.order-price {
+  font-size: 1.1rem;
+  color: #6e4d2d;
+  margin-bottom: 10px;
+}
+
+.order-btn {
+  background: #c6b9ab;
+  color: #080700;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px #24211f23;
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+.order-btn:hover {
+  background: #b09d85;
+  transform: scale(1.07);
+}
+
+.order {
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  background: #fff;
+  padding: 30px 24px 24px 24px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px #24211f50;
+  min-width: 320px;
+  position: relative;
+  text-align: left;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #7c6f61;
+}
+
+.orderForm input[type="text"], .orderForm input[type="number"] {
+  width: 100%; 
+  padding: 6px 8px; 
+  margin: 6px 0 14px 0;
+  border-radius: 6px; 
+  border: 1px solid #c6b9ab;
+  font-size: 15px;
+}
+
+.orderForm button.order-btn {
+  width: 100%;
+}
+
+.site-footer {
+    background-color: #e7e0d9cf;
+    color: #080700;
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1100px;
+}
+
+.site-footer p{
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+    text-align: center;
+}

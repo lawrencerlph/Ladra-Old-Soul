@@ -1,0 +1,318 @@
+body{
+    background: url(motor1.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-wrapper{
+    position: fixed;       
+    top: 10px;               
+    left: 50%;                 
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px); 
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #c6b9ab;
+    box-shadow: 10px 10px 5px #24211f;
+    border: #c6b9ab;
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow: hidden;   
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navlink-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.navlink-wrapper a{
+    text-decoration: none;
+    color: #080700;
+    font-size: 20px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navlink.active {
+   background: #c6b9abe5;
+   color: #24211f;
+   font-weight: bold;
+   box-shadow: 4px 4px 8px #24211f22;
+}
+
+.navlink:hover{
+    background-color: #6b6662;
+}
+
+.hero-section{
+    text-align: center;
+    margin: 30px auto;
+    padding: 80px 45px 45px 45px;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 1100px;
+}
+
+.hero-section h1{
+    font-size: 40px;
+    color: #080700;
+    margin-bottom: 20px;
+}
+
+.hero-section h3{
+    font-size: 20px;
+    color: #080700;
+    margin-bottom: 20px;
+}
+
+.hero-section p{
+    font-size: 18px;
+    color: #080700;
+    margin: 15px;
+    padding: 0 20px;
+}
+
+.cta-button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.cta-button:disabled {
+    pointer-events: none;
+}
+
+.cta-button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.about-section{
+    text-align: center;
+    margin: 20px auto;
+    padding: 45px;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 1100px;
+}
+
+.about-section h2{
+    font-size: 30px;
+    color: #080700;
+    margin: 20px;
+}
+
+.about-section p{
+    font-size: 18px;
+    color: #080700;
+    margin: 15px;
+    padding: 0 20px;
+}
+
+.about-section .about-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.about-section .about-image:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.products-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 45px;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 1100px;
+}
+
+.products-section h2 {
+    font-size: 30px;
+    color: #080700;
+    margin: 20px;
+}
+
+.products-section p {
+    font-size: 15px;
+    color: #080700;
+    margin: 15px;
+    padding: 0 20px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.products {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    padding: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin: 10px 0;
+}
+
+.products:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+
+.products span {
+    font-size: 1rem;
+    color: #080700;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.contact-section {
+    text-align: center;
+    margin: 50px auto;
+    padding: 40px 0;
+    background-color: #c6b9abe5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #24211fef;
+    max-width: 600px;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    color: #080700;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    font-size: 15px;
+    color: #080700;
+    margin-bottom: 22px;
+}
+
+.social-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    color: #080700;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px #24211f22;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.social-link:hover {
+    background: #c6b9ab;
+    color: #24211f;
+    box-shadow: 8px 8px 16px #24211f44;
+}
+
+.social-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.site-footer {
+    background-color: #e7e0d9cf;
+    color: #080700;
+    padding: 15px 0 15px 0;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1100px;
+}
+
+.site-footer p{
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.85;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
